@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css" >
+        <title>Lab 4 BRAHIM TOURE</title>
+       
+
+ 
+ 
+
+
+        
+	</head>
+	<body>
+
+        
+		<div id="wrapper">
+			<header>
+                
+                <h1>Registration</h1>
+                <p>Please enter the following information. Fields marked with an asterisk (<span class="required">*</span>) are required.</p>
+            
+			</header>
+			<div id="content">
+                <form method="post" action="javascript:void(0)">
+
+                </form>
+               
+			<fieldset>
+
+                <legend><span style="color:blue;">Personal Information</span>
+                 </legend>
+                <table>
+                    <tr>
+                        <td><span style="color:red;"> * </span>First Name:
+                        </td>
+                        <td><input type="text" name="FirstName" id="firstName" size="40">
+                        </td> 
+                    </tr>
+                    
+                    <tr>
+                        <td><span style="color:red;"> * </span>Last Name:
+                        </td>
+                        <td><input type="text" name="LastName" id="LastName" size="40">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span style="color:red;"> * </span>city:
+                        </td>
+                        <td><input type="text" name="Address" id="city" size="40">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><span style="color:red;"> * </span>Address:</td>
+                        <td><input type="text" name="city" id="Address"  size="40"></td> 
+                    </tr>
+                    
+                    <tr>
+                        <td><span style="color:red;"> * </span>Province:</td>
+            <td>
+                <select name="Province"  id="Province">
+                <option>Select a province</option>
+                <option value="BC">British Colombia</option>
+                <option value="AB">Alberta</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="ON"> Ontario</option>
+                    <option value="QC">Quebec</option>
+                    <option value="NB"> New Brunswick</option>
+                    <option value="NS"> Nova Scotia</option>
+                    <option value="PE"> Prince Edward Island</option>
+                    <option value="NF">Newfoundland</option>
+                    <option value="YK">Yukon</option>
+                    <option value="NWT"> Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    
+    </select>
+    </td>				
+            
+    
+    
+    
+                    </tr>
+                    
+                <tr>
+                    <td><span style="color:red;"> * </span>Postal Code:
+                    </td>
+                    <td><input type="textbox" name="Postal" max="6" id="Postal">
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><span style="color:red;"> * </span>Email Address:
+                    </td>
+                    <td><input type="" name="textbox">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span style="color:red;"> * </span>Home Phone:
+                    </td>
+                    <td><input type="textbox" name="phone" >
+                    </td>
+                    
+    
+                </tr>
+                <tr>
+                    <td>work Phone:
+
+                    </td>
+                    <td><input type="textbox" name="phone" >
+                    </td>
+                    
+    
+                </tr>
+                
+    </table>
+                    
+				<!-- * First Name | textbox -->
+				<!-- * Last Name | textbox -->
+				<!-- * Address | textbox, with a size of 40 characters -->
+				<!-- * City | textbox -->
+				<!-- * Province | dropdown box, has options for all provinces and territories. 
+					Option values should be the short code for the province. A list is provided below. 
+					
+					BC - British Columbia
+					AB - Alberta
+					SK - Saskatchewan
+					MB - Manitoba
+					ON - Ontario
+					QC - Quebec
+					NB - New Brunswick
+					NS - Nova Scotia
+					PE - Prince Edward Island
+					NF - Newfoundland
+					YK - Yukon
+					NWT- Northwest Territories
+					NU - Nunavut
+					
+				-->
+				<!-- * Postal Code | textbox, maximum length of 6 characters -->
+				<!-- * Email address | textbox -->
+				<!-- * Home phone | textbox -->
+				<!-- Work phone | textbox -->
+					
+			</fieldset>
+			<fieldset>
+				<legend ><span style="color:blue;">Payment Information</span></legend>
+				<!-- Credit Card Type | radio buttons
+					 
+					 There should be three buttons: one for VISA, one for MasterCard, and one for American Express.
+					 All three buttons can go in one <td> element.
+					 
+					 NOTE: each radio button should have the same name, but a different id. For example, you might use
+					 the name "creditCard" for each, but "creditCardVisa", "creditCardAmex" and "creditCardMasterCard"
+					 as the id's. 
+					 
+					 Also, please review the lab instructions regarding the placement of credit card icon images beside
+					 each radio button. 
+				-->
+				<!-- Credit Card Number | textbox -->
+                <!-- Expiry Date | textbox, maximum 5 characters (MM/YY) -->
+                <p></p>
+                <tr>
+                    <table>
+                        <tr>
+                        <td>Credit Card type:
+
+                        </td>
+                        <td><img src="images/visa.png" alt="visa">
+                        </td>
+                        <td><input type="radio" name="creditCard">
+                        </td>
+                        
+                        
+                        
+                    
+                            <td><img src="images/mastercard.png" alt="mastercard">
+                            </td>
+                            <td><input type="radio" name="creditCard">
+                            </td>
+                                <td><img src="Images/amex.png" alt="amex">
+                                </td>
+                        <td><input type="radio" name="creditCard">
+                        </td>
+                    </tr>
+                    </table>
+                    <tr>
+                        <td>Credit Card Number:
+
+                        </td>
+                         <td colspan="8" ><input type="textbox" name="CreditcardNumber" id="CreditcardNumber"></td>
+                    </tr>
+                        <tr>
+                        <td>Expiry(MM/YY)</td>
+                        <td colspan="8"><input type="textbox" name="expiry" id="ex" size="4" max="5"> 
+                        /
+                        <input type="textbox" name="Expiry" id="expiry"  size="4" max="5"></TD>
+                    </tr>
+        
+                        
+                        
+                        
+                    
+                </table>
+                
+			</fieldset>
+			<fieldset>
+
+				<legend><span style="color:blue;">Agree and Submit</span></legend>
+					<!-- * Agree to Terms and Conditions? | checkbox, value of 'yes' -->
+                    <!-- No field name. Place a submit button in one column, and reset button in the other. -->
+                  
+                    <table>
+                        <tr>
+                        <td>Check if you agree with our<a href="https://www.google.com"> terms and conditions</a> </td>
+                        <td> <input type="checkbox" name="Terms" id="TandC"></td>
+    </tr>
+                        <tr>
+                            <td colspan="2"><input type="Submit" name="submit" id="submit" value="Submit Registration">
+                            <input type="reset" name="reset" id="reset" value='Reset Form'></td>
+                            
+    
+                        </tr>
+                    </table>
+                   
+			</div><!-- End Content -->
+			<footer>	
+				<p>&copy;2013 CST8285. All rights reserved.</p>
+			</footer>
+		</div><!-- End Wrapper -->
+	</body>
+</html>
